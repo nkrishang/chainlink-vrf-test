@@ -18,7 +18,7 @@ async function main() {
   const Factory = await ethers.getContractFactory("RandomEmitter");
   const randomEmitter = await Factory.deploy(vrfCoordinator, linkTokenAddress, keyHash);
 
-  console.log("Pack ERC1155 token address:", randomEmitter.address);
+  console.log("Random Emitter address:", randomEmitter.address);
 }
 
 main()
@@ -28,4 +28,4 @@ main()
     process.exit(1);
   });
 
-// Random Emitter address -- 
+// Random Emitter address -- 0x21e232d1fA22048c3015826d00d1c252599Bd9eb
