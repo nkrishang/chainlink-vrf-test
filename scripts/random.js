@@ -18,7 +18,7 @@ async function main() {
   const randomNumberRequest = await randomEmitter.requestRandomNumber({ gasLimit: 1000000 });
   await randomNumberRequest.wait()
 
-  console.log('Random number request tx hash: ', randomNumberRequest.hash);
+  console.log('Random number request tx hash: ', randomNumberRequest.hash); 
 }
 
 main()
